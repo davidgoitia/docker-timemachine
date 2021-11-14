@@ -105,6 +105,7 @@ There are these environment variables:
 
 * **AFP_LOGIN**: User name
 * **AFP_PASSWORD**: User password
+* **AFP_PASSWORD_FILE**: User password to be read from file. For not dclaring password directly in `docker-compose`. Can be used with [docker secrets](https://docs.docker.com/engine/swarm/secrets/)
 * **AFP_NAME**: Name of the volume
 * **AFP_SIZE_LIMIT**: Size in MB of the volume (optional)
 * **PUID**: For UID
@@ -166,3 +167,4 @@ Because if you don't do it this way, the discovery message won't be able to reac
 * Óscar de Arriba (odarriba@gmail.com)
 * Daniel Iñigo (demil133@gmail.com)
 * Josef Friedrich ([@Josef-Friedrich](https://github.com/Josef-Friedrich))
+* David Goitia ([@davidgoitia](https://github.com/davidgoitia))

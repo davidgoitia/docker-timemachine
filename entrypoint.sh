@@ -1,5 +1,9 @@
 #!/bin/bash
 
+if [ -f "$AFP_PASSWORD_FILE" ] && [ -z "$AFP_PASSWORD" ]; then
+    read AFP_PASSWORD < $AFP_PASSWORD_FILE
+fi
+
 set -e
 
 if [ ! -e /.initialized_user ] && [ ! -z "$AFP_LOGIN" ] && [ ! -z "$AFP_PASSWORD" ] && [ ! -z "$AFP_NAME" ] && [ ! -z $PUID ] && [ ! -z $PGID ]; then
