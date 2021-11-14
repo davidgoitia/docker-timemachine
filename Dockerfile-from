@@ -1,0 +1,6 @@
+FROM odarriba/timemachine:latest
+LABEL maintainer="David Goitia <david@goitia.es>"
+
+# Just add modified entrypoint for docker secrets
+ADD entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
